@@ -8,9 +8,9 @@
 <!-- Additional CSS must be placed after Bootstrap CSS -->
  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 <!-- Additional CSS must be placed after Bootstrap CSS -->
-<link rel="stylesheet" href="css/styles.css" />
 <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
 <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+<link rel="stylesheet" href="css/styles.css" />
 
 
   <link rel="stylesheet" href="css/styles.css">
@@ -19,6 +19,271 @@
 </head>
 
 <body>
+<!-- Top navigation menu -->
+  <header>
+    <nav class="navbar navbar-expand-sm sitcky-top border-bottom border-dark py-0" id="topNav">
+      <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="categoryNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item"> <a class="nav-link py-0" href="#"> News </a></li>
+              <li class="nav-item"> <a class="nav-link py-0" href="#"> Politics </a></li>
+              <li class="nav-item"><a class="nav-link py-0" href="#"> Election</a></li>
+              <li class="nav-item"><a class="nav-link py-0" href="#"> Space</a></li>
+              <li class="nav-item"><a class="nav-link py-0" href="#"> Transportation</a></li>
+            </ul>
+          </div>  
+      </div>
+    </nav>
+  </header>
+
+<!-- Logo Header & Main Menu -->
+  <div class="header-container" id="logo-header">
+    <div class="container-flex">
+      <div class="row">
+        <div class="col-2 ml-4 mt-4 pt-2">
+          <img src="/img/wtp-color-logo.png" class="img-fluid d-block float-left" id="logo" alt="logo">
+        </div>
+        <div class="col-3">
+<!-- Hot Nav -->          
+<nav class="navbar navbar-expand-sm navbar-light float-left ml-auto">
+  <div class="container">
+    <div class="collapse navbar-collapse" id="nucampNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item active"> <a class="nav-link" href="#"> <img src="/img/icons/new-sm.png"></i></a></li>
+        <li class="nav-item"> <a class="nav-link" href="#"> <img src="/img/icons/hot-sm.png"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#"> <img src="/img/icons/trending-sm-red.png"></i></a></li>
+      </ul>
+    </div> 
+  </div>
+</nav>
+   
+        </div>
+<!-- Header Nav -->        
+<nav class="navbar navbar-expand-sm navbar-light float-right ml-auto">
+  <div class="container">
+    <div class="collapse navbar-collapse" id="nucampNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item active"> <a class="nav-link" href="#"> <i class="fa fa-comments fa-3x" aria-hidden="true"></i></a></li>
+        <li class="nav-item"> <a class="nav-link" href="#"> <i class="fa fa-video-camera fa-3x" aria-hidden="true"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#"> <i class="fa fa-globe fa-3x" aria-hidden="true"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#"> <i class="fa fa-rocket fa-3x" aria-hidden="true"></i></a></li>
+      </ul>
+
+      <span class="navbar-text">
+        <a role="button" data-toggle="modal" data-target="#loginModal">
+          <i class="fa fa-sign-in fa-3x"> </i>
+        </a>
+      </span>
+      <button type="button" class="btn btn-sm ml-3 px-4" id="post-button" data-toggle="modal" data-target="#postModal">
+        <strong>POST</strong>
+      </button>
+
+    </div> 
+  </div>
+</nav>
+      </div>
+    </div>
+  </div>
+
+<!-- Post Modal -->  
+<div id="postModal" class="modal fade" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header d-block text-center mb-0">
+        <!-- <h3 class="modal-title">Start A Discussion </h3> -->
+        <button type="button" class="close" data-dismiss="modal">&times; </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <button type="button" class="btn btn-outline-primary"><i class="fa fa-comments fa-2x" aria-hidden="true"></i>Discussion Post</button>
+            </div>
+            <div class="col-12 mt-3">
+              <button type="button" class="btn btn-outline-primary"><i class="fa fa-video-camera fa-2x" aria-hidden="true"></i>Post A Video</button>
+            </div>
+            <div class="col-12 mt-3">
+              <button type="button" class="btn btn-outline-primary"><i class="fa fa-link fa-2x" aria-hidden="true"></i>Share A Link</button>
+            </div>
+            <div class="col-12 mt-3">
+              <button type="button" class="btn btn-outline-primary"><i class="fa fa-bullhorn fa-2x" aria-hidden="true"></i>Start A Debate</button>
+            </div>
+          </div>
+        </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Top Slider Nav -->
+    <div class="top-content">
+      <div class="container-fluid">
+          <div id="carousel-nav" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
+                    <a href="https://azmind.com/demo/bootstrap-carousel-multiple-items/"> <img src="img/science-thumb.jpg" class="img-fluid mx-auto d-block" alt="science"> </a>
+                  </div>
+                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                      <a href="#"> <img src="img/tech-thumb.jpg" class="img-fluid mx-auto d-block" alt="technology"> </a>
+                  </div>
+                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="#"> <img src="img/transportation-thumb.jpg" class="img-fluid mx-auto d-block" alt="transportation"> </a>
+                  </div>
+                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="#"> <img src="img/infrastructure-thumb.jpg" class="img-fluid mx-auto d-block" alt="infrastructure"> </a>
+                  </div>
+                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="#"> <img src="img/housing-thumb.jpg" class="img-fluid mx-auto d-block" alt="housing"> </a>
+                  </div>
+                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="#"> <img src="img/space-thumb.jpg" class="img-fluid mx-auto d-block" alt="space"> </a>
+                  </div>
+                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="#"> <img src="img/medicine-thumb.jpg" class="img-fluid mx-auto d-block" alt="medicine"> </a>
+                  </div>
+                  <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <a href="#"> <img src="img/censorship-thumb.jpg" class="img-fluid mx-auto d-block" alt="censorship"> </a>
+                  </div>
+              </div>
+              <a class="carousel-control-prev" href="#carousel-nav" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel-nav" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      </div>
+    </div>
+  
+
+  <!-- Main Body Container -->
+  <div class="container-fluid my-0 body-style">
+    <div class="row">
+      <!-- content left -->
+      <div class="col-9 content-left">
+        <div class="card col my-4 mx-2 post-card-container">
+          <div class="card-body post-card-body">
+            <div class="post-content">
+              <div class="post-header">
+              </div>
+              <!-- Main Post Section -->
+              <div class="post-content mx-4">
+                <div class="row">
+                  <div class="col col-sm-6 my-3">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/j-pJzQJJiUs"></iframe>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <h5>Do we need universal basic income?</h5>
+                    <p>In an advanced, modern society, is there a reason for people to go without the basics of living? Things like food,
+                      shelter, clothing, electricity, a means of communication?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Post Responses -->
+          <div class="col card body-style py-3 mb-4">
+            
+            <!-- Threaded responses --> 
+            <div class="card col-12 ">
+              
+                Main post response
+             
+              
+              <div class="card-body post-card-response my-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut elementum diam. Pellentesque a feugiat urna. Vestibulum nisi metus, accumsan rutrum posuere quis, scelerisque et sem. Vivamus quis ultrices mauris. Curabitur suscipit consequat justo a rhoncus. Etiam tempus sed arcu in faucibus. Mauris ultrices facilisis ipsum non finibus. Donec vel gravida sem, a fringilla ligula. Suspendisse at sem in elit porta lobortis a at mi.
+              </div>
+            </div>
+
+            <div class="card col-12 body-style">
+              <div class="card-body post-card-response">
+                Phasellus non placerat nibh, a imperdiet ante. Pellentesque eget felis suscipit, molestie metus nec, pharetra felis. Duis hendrerit ipsum non eros tempor pellentesque. Praesent interdum justo ut ornare hendrerit. Praesent placerat, erat id tristique ullamcorper, lectus dolor sollicitudin nisi, eu sodales nibh dolor vel leo. Etiam a accumsan lectus. Vestibulum porta condimentum dui. Aliquam erat volutpat. Nam dapibus eros vitae purus finibus rhoncus. Pellentesque ullamcorper, sem in tempus maximus, sem purus consectetur eros, in tristique ipsum enim nec sem. Vivamus ante velit, varius a lacus in, aliquet facilisis tortor. Vestibulum sodales venenatis leo eget ultrices. Nam id nisl imperdiet, porttitor erat at, consectetur tellus. Nam pellentesque maximus urna a sollicitudin.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+      <!-- custom class right sidebar (float right) -->
+      <div class="col 3 sidebar-right mb-4"> 
+        <div class="card mt-4 mr-2">
+          <div class="card-header">
+            <h5 class="text-center">#Trending Tags</h5>
+          </div>
+          <div class="card-body">
+      <!-- Tag Cloud Starts-->      
+      <div id="tagscloud">
+        <a href="#" target="_blank" class="tagc1" style="left: 113.554px; top: 30.1925px; z-index: 102; opacity: 0.118615; display: none;">Tags Cloud</a>
+      <a href="#" target="_blank" class="tagc3" style="left: 136.828px; top: 34.752px; z-index: 102; opacity: 0.111076; color: rgb(255, 255, 255); padding: 5px; display: none;">Elections</a>
+      <a href="#" target="_blank" class="tagc3" style="left: 95.415px; top: 30.9076px; z-index: 103; opacity: 0.119797; color: rgb(255, 255, 255); padding: 5px; display: none;">Solar Power</a>
+      <a href="#" target="_blank" class="tagc1" style="left: 58.2577px; top: 45.3038px; z-index: 107; opacity: 0.181538; color: rgb(255, 255, 255); padding: 5px;">California fires</a>
+      <a href="#" target="_blank" class="tagc3" style="left: 65.4534px; top: 42.9294px; z-index: 119; opacity: 0.389813; color: rgb(255, 255, 255); padding: 5px;">sustainability</a>
+      <a href="#" target="_blank" class="tagc2" style="left: 155.111px; top: 56.2987px; z-index: 143; opacity: 1.20117; color: rgb(255, 255, 255); padding: 5px;">Portland unrest</a>
+      <a href="#" target="_blank" class="tagc1" style="left: 178.188px; top: 63.6679px; z-index: 101; opacity: 0.102853; display: none;">clean air</a>
+      <a href="#" target="_blank" class="tagc1" style="left: 166.312px; top: 51.4474px; z-index: 101; opacity: 0.102451; display: none;">Media Bias</a>
+      <a href="#" target="_blank" class="tagc3" style="left: 126.4px; top: 31.9141px; z-index: 102; opacity: 0.11366; color: rgb(255, 255, 255); padding: 5px; display: none;">organics</a>
+      <a href="#" target="_blank" class="tagc2" style="left: 70.8082px; top: 35.6041px; z-index: 103; opacity: 0.120472; color: rgb(255, 255, 255); padding: 5px; display: none;">longevity</a>
+      <a href="#" target="_blank" class="tagc3" style="left: 38.0497px; top: 63.3839px; z-index: 102; opacity: 0.110506; color: rgb(255, 255, 255); padding: 5px; display: none;">learn coding</a>
+      <a href="#" target="_blank" class="tagc2" style="left: 24.7928px; top: 85.7126px; z-index: 101; opacity: 0.107242; display: none;">UBIe</a>
+      <a href="#" target="_blank" class="tagc2" style="left: 34.8869px; top: 107.519px; z-index: 160; opacity: 2.35868; color: rgb(255, 255, 255); padding: 5px;">banner</a>
+      <a href="#" target="_blank" class="tagc1" style="left: 131.198px; top: 198.582px; z-index: 138; opacity: 0.950953; color: rgb(255, 255, 255); padding: 5px;">water filtering</a>
+      <a href="#" target="_blank" class="tagc2" style="left: 173.975px; top: 100.387px; z-index: 158; opacity: 2.24522; color: rgb(255, 255, 255); padding: 5px;">education</a>
+      <a href="#" target="_blank" class="tagc2" style="left: 196.096px; top: 105.168px; z-index: 111; opacity: 0.243898;">politics</a>
+      <a href="#" target="_blank" class="tagc3" style="left: 190.682px; top: 84.4646px; z-index: 101; opacity: 0.106818; display: none;">transportation</a>
+      <a href="#" target="_blank" class="tagc2" style="left: 159.551px; top: 46.2348px; z-index: 102; opacity: 0.108824; color: rgb(255, 255, 255); padding: 5px; display: none;">clean fuel</a>
+      <a href="#" target="_blank" class="tagc2" style="left: 64.0548px; top: 41.4592px; z-index: 101; opacity: 0.100776; color: rgb(255, 255, 255); padding: 5px; display: none;">remote work</a>
+      <a href="#" target="_blank" class="tagc1" style="left: 29.4543px; top: 76.0747px; z-index: 102; opacity: 0.108335; color: rgb(255, 255, 255); padding: 5px; display: none;">local</a>
+      <a href="#" target="_blank" class="tagc1" style="left: 19.6138px; top: 134.8px; z-index: 109; opacity: 0.203257; color: rgb(255, 255, 255); padding: 5px;">technology</a>
+      <a href="#" target="_blank" class="tagc1" style="left: 37.8404px; top: 130.914px; z-index: 156; opacity: 2.01569; color: rgb(255, 255, 255); padding: 5px;">education</a>
+      <a href="#" target="_blank" class="tagc3" style="left: 78.4554px; top: 198.904px; z-index: 132; opacity: 0.74094; color: rgb(255, 255, 255); padding: 5px;">home schooling</a>
+      <a href="#" target="_blank" class="tagc1" style="left: 128.166px; top: 125.324px; z-index: 188; opacity: 7.37894;">common core</a>
+      <a href="#" target="_blank" class="tagc3" style="left: 169.996px; top: 141.045px; z-index: 162; opacity: 2.61017; color: rgb(255, 255, 255); padding: 5px;">Tesla</a>
+      <a href="#" target="_blank" class="tagc2" style="left: 188.867px; top: 154.047px; z-index: 121; opacity: 0.418877;">Online business</a>
+      <a href="#" target="_blank" class="tagc3" style="left: 177.262px; top: 62.5426px; z-index: 102; opacity: 0.109485; display: none;">free medical</a>
+      <a href="#" target="_blank" class="tagc2" style="left: 139.031px; top: 35.5227px; z-index: 101; opacity: 0.105409; color: rgb(255, 255, 255); padding: 5px; display: none;">AI</a>
+      <a href="#" target="_blank" class="tagc3" style="left: 89.4792px; top: 31.9401px; z-index: 102; opacity: 0.11411; color: rgb(255, 255, 255); padding: 5px; display: none;">Space Travel</a>
+      <a href="#" target="_blank" class="tagc3" style="left: 50.6413px; top: 50.6596px; z-index: 102; opacity: 0.11192; color: rgb(255, 255, 255); padding: 5px; display: none;">Moon Base</a>
+      <a href="#" target="_blank" class="tagc1" style="left: 42.093px; top: 178.455px; z-index: 119; opacity: 0.383704; color: rgb(255, 255, 255); padding: 5px;">Mars Expedition</a>
+      <a href="#" target="_blank" class="tagc3" style="left: 51.8509px; top: 184.095px; z-index: 151; opacity: 1.65004; color: rgb(255, 255, 255); padding: 5px;">Keto</a>
+      <a href="#" target="_blank" class="tagc2" style="left: 118.487px; top: 30.632px; z-index: 102; opacity: 0.117392; color: rgb(255, 255, 255); padding: 5px; display: none;">Fasting</a>
+      <a href="#" target="_blank" class="tagc3" style="left: 153.81px; top: 186.157px; z-index: 141; opacity: 1.08555; color: rgb(255, 255, 255); padding: 5px;">Safe Neighborhoods</a>
+      <a href="#" target="_blank" class="tagc2" style="left: 143.51px; top: 37.3276px; z-index: 103; opacity: 0.120311; color: rgb(255, 255, 255); padding: 5px; display: none;">cognitive bias</a>
+      <a href="#" target="_blank" class="tagc3" style="left: 96.4933px; top: 30.7565px; z-index: 102; opacity: 0.116795; color: rgb(255, 255, 255); padding: 5px; display: none;">social media</a>
+      <a href="#" target="_blank" class="tagc1" style="left: 91.8373px; top: 206.783px; z-index: 118; opacity: 0.365235; color: rgb(255, 255, 255); padding: 5px;">communication</a>      
+  </div>
+      <!-- Tag Cloud Ends -->
+          </div>
+          
+          <div class="card-header">
+            <h5 class="text-center">#Trending Groups</h5>
+          </div>
+          <div class="card-body">
+            <div>
+              <img src="/img/phx-startups-thumb.jpeg" alt="Pheonix Startups" class="img-thumbnail mb-3">
+            </div>
+            <div>
+              <img src="/img/1mil-cups-thumb.png" alt="1 Million Cups" class="img-thumbnail mb-3">
+            </div>
+            <div>
+              <img src="/img/cleveland-clean-thumb.png" alt="Cleveland Cleanup" class="img-thumbnail mb-3">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 
 <footer>
@@ -29,6 +294,8 @@
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/js/tagsCloud.js"></script>
+<script src="/js/scrips.js"></script>
 
 </body>
 
